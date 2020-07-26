@@ -133,7 +133,7 @@
 
         $.ajax({
             type: "POST",
-            url: "http://localhost:5001/snow-software-ae01b/us-central1/app/mail",
+            url: "https://us-central1-snow-software-ae01b.cloudfunctions.net/app/mail",
             data: "name=" + name + "&email=" + email + "&phone=" + phone + "&reason=" + select + "&body=" + body,
             success: function (text) {
                 if (text == "ok") {
