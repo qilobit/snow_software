@@ -129,14 +129,14 @@
         var email = $("#remail").val();
         var phone = $("#rphone").val();
         var select = $("#rselect").val();
-        var terms = $("#rterms").val();
+        var body = $("#coti-body").val();
 
         $.ajax({
             type: "POST",
-            url: "php/requestform-process.php",
-            data: "name=" + name + "&email=" + email + "&phone=" + phone + "&select=" + select + "&terms=" + terms,
+            url: "http://localhost:5001/snow-software-ae01b/us-central1/app/mail",
+            data: "name=" + name + "&email=" + email + "&phone=" + phone + "&reason=" + select + "&body=" + body,
             success: function (text) {
-                if (text == "success") {
+                if (text == "ok") {
                     rformSuccess();
                 } else {
                     rformError();
