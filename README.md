@@ -1,3 +1,3 @@
-# snow_software
+# Johnson Software
 
-### page: https://qilobit.github.io/snow_software/
+
